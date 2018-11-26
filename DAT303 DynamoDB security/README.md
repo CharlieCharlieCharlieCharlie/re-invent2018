@@ -12,9 +12,10 @@ Create role with DDB access, deny everything else. Should work right?
 But when using sse-specification, denied, becuase user needs access to the key in KMS through the same policy
 
 ## Connection Pooling
-SDK Java: default 50 connection limit
-Python: 10 connections
-Node: No connection pooling by default
+* SDK Java: default 50 connection limit
+* Python: 10 connections
+* Node: No connection pooling by default
+
 [Connection-Pooling-Slide](./connection-pooling.jpg)
 
 ## CloudTrail audit logs
