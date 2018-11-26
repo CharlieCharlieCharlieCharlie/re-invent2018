@@ -25,11 +25,11 @@ NOT data plane operations
 
 Can get notifications in cloudwatch from dynamoDB events (such as delete table etc)
 
-##Fine grained control:
+## Fine grained control:
 DynamoDB access control
 [Fine Grained Access](./fine-grained-access.jpg)
 
-##Create VPC endpoint for DynamoDB
+## Create VPC endpoint for DynamoDB
 Source restriction policy (IP whitelist) changes, source ip is not populated when requesting VPC endpoint from within the VPC
 
 Can ignore whitelist source IP with "StringEqualsIfExist": { "aws:sourcevpce": "vpc-id"}
