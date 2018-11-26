@@ -1,23 +1,23 @@
-#Protecting your greatest asset: (your data): Security Best Practices on DynamoDB
+# Protecting your greatest asset: (your data): Security Best Practices on DynamoDB
 
-##KMS to encrypt DDB
+## KMS to encrypt DDB
 
 KMS results cached for 5 min
 
 Default encryption at rest: tables indices streams and backups using KMS AES256
 
-###IAM roles
+### IAM roles
 
 Create role with DDB access, deny everything else. Should work right?
 But when using sse-specification, denied, becuase user needs access to the key in KMS through the same policy
 
-##Connection Pooling
+## Connection Pooling
 SDK Java: default 50 connection limit
 Python: 10 connections
 Node: No connection pooling by default
 [Connection-Pooling-Slide](./connection-pooling.jpg)
 
-##CloudTrail audit logs
+## CloudTrail audit logs
 Control Plane operations
 NOT data plane operations
 [Cloud Trail Reporting](./cloud-trail-reporting.jpg)
